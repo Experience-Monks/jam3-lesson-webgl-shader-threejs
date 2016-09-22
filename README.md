@@ -12,14 +12,14 @@ In this lesson, we'll learn how to apply Fragment and Vertex shaders to a [Three
 - [Setup](#setup)
 - [Code Overview](#code-overview)
 - [Mesh & Shader Materials](#mesh--shader-materials)
-- [Step 1: Your First Shader](#step-1--your-first-shader)
+- [Step 1: Your First Shader](#step-1-your-first-shader)
   - [Attributes](#attributes)
   - [Uniforms](#uniforms)
   - [Projecting the Vertex](#projecting-the-vertex)
-- [Step 2: Distance from Center](#step-2--distance-from-center)
-- [Step 3: Visualizing Normals](#step-3--visualizing-normals)
-- [Step 4: Exploding Triangles](#step-4--exploding-triangles)
-- [Step 5: Animation](#step-5--animation)
+- [Step 2: Distance from Center](#step-2-distance-from-center)
+- [Step 3: Visualizing Normals](#step-3-visualizing-normals)
+- [Step 4: Exploding Triangles](#step-4-exploding-triangles)
+- [Step 5: Animation](#step-5-animation)
 
 ## Why ThreeJS?
 
