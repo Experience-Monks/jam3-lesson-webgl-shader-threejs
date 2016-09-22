@@ -20,6 +20,7 @@ In this lesson, we'll learn how to apply Fragment and Vertex shaders to a [Three
 - [Step 3: Visualizing Normals](#step-3-visualizing-normals)
 - [Step 4: Exploding Triangles](#step-4-exploding-triangles)
 - [Step 5: Animation](#step-5-animation)
+- [Appendix: ShaderMaterial vs RawShaderMaterial](#appendix-shadermaterial-vs-rawshadermaterial)
 
 ## Why ThreeJS?
 
@@ -442,6 +443,18 @@ float dist = sin(time) * 0.5 + 0.5;
 ```
 
 Voilà! We have an exploding bunny! :rabbit:
+
+## Appendix: ShaderMaterial vs RawShaderMaterial
+
+At some point you may wonder why ThreeJS has both `ShaderMaterial` and `RawShaderMaterial`. Typically I suggest using `RawShaderMaterial` since it is less error-prone, but it means you have to be a bit more verbose and manually specify precision, extensions, etc.
+
+Instead, you can use `ShaderMaterial` and skip some definitions, such as ThreeJS's built-in attributes, uniforms and fragment shader precision:
+
+```glsl
+void main () {
+  gl_Position = projectionMatrix * modelViewMatrix * vec4(position.xyz, 1.0);
+}
+```
 
 ## Next Steps
 
