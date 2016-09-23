@@ -1,0 +1,45 @@
+{
+  "name": "jam3-lesson-webgl-shader-threejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "license": "MIT",
+  "author": {
+    "name": "Matt DesLauriers",
+    "email": "dave.des@gmail.com",
+    "url": "https://github.com/mattdesl"
+  },
+  "semistandard": {
+    "globals": [
+      "THREE"
+    ]
+  },
+  "dependencies": {
+    "bunny": "^1.0.1",
+    "object-assign": "^4.1.0",
+    "orbit-controls": "^1.1.1",
+    "raf-loop": "^1.1.3",
+    "three": "^0.81.2",
+    "three-buffer-vertex-data": "^1.0.2",
+    "unindex-mesh": "^2.0.0"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.14.0",
+    "babelify": "^7.3.0",
+    "brfs": "^1.4.3",
+    "budo": "^9.2.0"
+  },
+  "scripts": {
+    "test": "node test.js",
+    "start": "budo lib/index.js:bundle.js --live --dir app -- -t babelify -t brfs"
+  },
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Jam3/jam3-lesson-webgl-shader-threejs.git"
+  },
+  "homepage": "https://github.com/Jam3/jam3-lesson-webgl-shader-threejs",
+  "bugs": {
+    "url": "https://github.com/Jam3/jam3-lesson-webgl-shader-threejs/issues"
+  }
+}
