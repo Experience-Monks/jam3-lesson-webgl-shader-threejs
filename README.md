@@ -62,7 +62,7 @@ The code is split into a few different files:
 - **[`./lib/index.js`](./lib/index.js)**  
 This holds the "guts" of our demo, creating our application, geometry, mesh, and render loop. Since it is the root file, we use this to ensure the `THREE` global can be accessed from other files:  
 ```js
-global.THREE = reqiure('three');
+global.THREE = require('three');
 ```
 - **[`./lib/createApp.js`](./lib/createApp.js)**  
 This boilerplate creates a basic ThreeJS application using a helper module, [orbit-controls](https://github.com/Jam3/orbit-controls), for 3D camera movement.
@@ -148,7 +148,7 @@ void main () {
 }
 ```
 
-Fragment and vertex shaders reqiure a `main()` function — it gets called by WebGL for each vertex (or fragment) in our mesh.
+Fragment and vertex shaders require a `main()` function — it gets called by WebGL for each vertex (or fragment) in our mesh.
 
 This vertex shader introduces two new concepts: **attributes** and **uniforms**.
 
